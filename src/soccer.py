@@ -20,9 +20,9 @@ lines =  file.readlines()
 
 lowestGoalsDiff= float("inf") # initilized with biggest value
 findTeam = None # to find the team with lowest goal difference (GD)
-
+START_LINE  = 3
 # read starting from line 4 to second last line
-for line in lines[3: len(lines)-1]:
+for line in lines[START_LINE: len(lines)-1]:
     line = line.strip() # remove pre and post characters
 
     if line[-1] == '-': # remove the seperate line (line 21)

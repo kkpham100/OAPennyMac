@@ -18,9 +18,9 @@ lines =  file.readlines()
 lowestTempDiff= float("inf") # initilized with biggest value
 
 findDay = 0 # to find the day with smallest temperature spread
-
+START_LINE  = 6
 # read from line 7 to third last line
-for line in lines[6: len(lines)-2]: # read from line 7
+for line in lines[START_LINE: len(lines)-2]: # read from line 7
     line = line.strip() ## remove pre and post characters
     tokens = line.split('   ') # convert the string into a words array
 
