@@ -35,8 +35,8 @@ for line in lines[3: len(lines)-1]:
     goalsAgainst = int(tokens[-3])  # GA
     goalsFor = int(tokens[-5])      # GF
 
-    #goalsDifference = goalsFor - goalsAgainst     
-    goalsDifference = abs(goalsFor - goalsAgainst) 
+    goalsDifference = goalsFor - goalsAgainst     
+    #goalsDifference = abs(goalsFor - goalsAgainst) 
 
     #find lowest GD and the team
     if goalsDifference < lowestGoalsDiff:
